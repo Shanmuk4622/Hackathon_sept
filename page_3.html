@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E- Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="Untitled.png" type="image/x-icon">
+    <style>
+         #ecoAccommodationPage {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 400px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        select, input, button {
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #result {
+            font-weight: bold;
+            color: green;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        ul {
+            text-align: left;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+     <h>
+        <div id="up">
+            <div class="logo" style="margin-left: 15px;"> 
+                <a href="image.png" target="_main"><img src="image.png" height="30px" style="border-radius: 5px;"></a>
+            </div>
+            <div class="logo" style="margin-left: 15px;">
+                <p id="del" style="font-size: 0.7rem;">
+                    Go Travel
+                </p>
+                <P style="font-size: 1rem;" >
+                    <i class="fa-solid fa-location-dot"></i>
+                    INDIA
+                </P>    
+            </div>
+            <div id="in">
+                <select class="size_sel" name="Places" style="width: 300px; border-radius: 50%; align-items: center; text-align: center;">
+                    <option>Places</option>
+                    <option>GOA</option>
+                    <option>Kerala</option>
+                    <option>Delhi</option>
+                    <option>Taj Mahal</option>
+                    <option>Kedarnath</option>
+                </select>
+                <input class="size_in" type="text" placeholder="Search Places" style="width: 100px; border-radius: 10%;">
+                <button class="size_but" style="background-color: rgb(112, 143, 230); border-radius: 50%;"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="logo" style="margin-left: 15px;">
+                <p id="del" style="font-size: 0.7rem;">
+                    Language
+                </p>
+                <P style="font-size: 1rem;" >
+                    <div style="margin-left: 15px;" class="logo">
+                        <i class="fa-solid fa-globe"></i>
+                        <select name="Lan" id="lan" style="background-color: #60e6e6;">
+                            <option>EN</option>
+                            <option>HIN</option>
+                            <option>TEL</option>
+                            <option>TN</option>
+                            <option>KAN</option>
+                            <option>SP</option>
+                        </select>
+                    </div>
+                </P>    
+            </div>
+            
+            <div class="logo" style="margin-left: 15px;">
+                <p>Hello, sign in</p>
+                <p><select name="Name & List" id="par">
+                    <option>To Explore</option>
+                </select></p>
+            </div>
+            <div id="cart" class="logo" style="font-size: 30px;">
+                <i class="fa-solid fa-user"></i>Track me
+            </div>
+        </div>
+     </h>
+     <hb>
+        <div id="se">
+            <div style="display: flex;">
+                <div class="sec"><i class="fa-sharp fa-solid fa-bars"></i>All places</div>
+                <div class="sec">Resturent</div>
+                <div class="sec">Temples</div>
+                <div class="sec">National parks</div>
+                <div class="sec">Bus Stops</div>
+                <div class="sec">Railway Stations</div>
+            </div>
+            <div>
+                <div class="sec"><i class="fa-solid fa-users"></i>Track Others</div>
+            </div>
+        </div>
+     </hb>
+
+    <main style="display: flex; flex-direction: row; height: 800px; background-image: url(backGround.jpg); justify-content: center; align-items: center;">
+        <div id="ecoAccommodationPage " style="background-color: #8dc1c1; border: 1px solid black; border-radius: 10px; height: 300px; width: 400px; display: flex; justify-content: center; flex-direction: column; align-items: center;" >
+            <h1>Eco-Friendly Accommodation </h1>
+    
+            <label for="destination">Select Accommodation:</label>
+            <select id="destination">
+                <option value="farm houses">Farm house</option>
+                <option value="pent house">Pent houses</option>
+                <option value="beaches">Beaches</option>
+                <!-- Add more destination options as needed -->
+            </select>
+    
+            <button onclick="suggestEcoAccommodation()">Find Eco-Friendly Accommodation</button>
+    
+            <div id="result"></div>
+    
+            <h2>Eco-Friendly Activities to Chill Out</h2>
+            <ul id="ecoActivitiesList"></ul>
+        </div>
+    </main>
+
+     <footer>
+        <f-1 class="f1">
+            Back to Top
+        </f-1>
+        <f-2 class="f2">
+            <div class="f21">
+                <ul class="ol">Get to Know Us</ul>
+                <ul>Careers</ul>
+                <ul>Blog</ul>
+                <ul>About E-Travel</ul>
+                <ul>Investor Relations</ul>
+                <ul>E-Travel Devices</ul>
+                <ul>E-Travel Science</ul>
+            </div>
+            <div class="f21">
+                <ul class="ol">Make Money with Us</ul>
+                <ul>Sell products on E-Travel</ul>
+                <ul>Sell on E-Travel Business</ul>
+                <ul>Sell apps on E-Travel</ul>
+                <ul>Become an Affiliate</ul>
+                <ul>Self-Publish with Us</ul>
+                <ul>Host an E-Travel Hub</ul>
+                <ul>See More Make Money with Us</ul>
+            </div>
+            <div class="f21">
+                <ul class="ol">E-Travel Payment Products</ul>
+                <ul>E-Travel Business Card</ul>
+                <ul>Shop with Points</ul>
+                <ul>Reload Your Balance</ul>
+                <ul>E-Travel Currency Converter</ul>
+            </div>
+        </f-2>
+        <f-3 id="f3">
+            <f-31>
+                <do class="dol">Conditions of Use</do>
+                <do class="dol">Privacy Notice</do>
+                <do class="dol">Your Ads Privacy Choices</do>
+            </f-31>
+            <f-32>  
+                <i class="fa-regular fa-copyright"></i>
+                <dal>1996-2023, E-Travel.com, Inc. or its affiliates</dal>
+            </f-32>
+        </f-3>
+     </footer>
+
+     <script>
+        function suggestEcoAccommodation() {
+            const destination = document.getElementById('destination').value;
+
+            let ecoAccommodationSuggestions = "";
+
+            if (destination) {
+                ecoAccommodationSuggestions = `Explore eco-friendly accommodation options in ${destination} that prioritize sustainability and environmental conservation.`;
+                
+                // Example eco-friendly activities based on accommodation
+                let ecoActivities = [];
+                switch (destination) {
+                    case 'farm houses':
+                        ecoActivities = ['Swimming','Gardening ', 'Yoga sessions with a view', 'Stargazing in protected areas','Organic farm-to-table dining'];
+                        break;
+                    case 'beaches':
+                        ecoActivities = ['Sunset beach cleanups', 'Snorkeling in coral reef conservation areas', 'Sustainable seafood cooking classes'];
+                        break;
+                    case 'pent house':
+                        ecoActivities = ['Bird watching and wildlife safaris', 'Tree planting ', 'Stargazing in protected areas'];
+
+                        break;
+                    default:
+                        ecoActivities = ['Explore local eco-friendly initiatives', 'Participate in community-based conservation projects'];
+                }
+
+                // Display eco-friendly activities
+                document.getElementById('ecoActivitiesList').innerHTML = ecoActivities.map(activity => <li>${activity}</li>).join('');
+            } else {
+                ecoAccommodationSuggestions = "Please select a destination to find eco-friendly accommodation.";
+            }
+
+            document.getElementById('result').innerText = ecoAccommodationSuggestions;
+        }
+    </script>
+</body>         
+</html> 

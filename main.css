@@ -1,0 +1,271 @@
+* {
+    margin: 0%;
+    
+}
+
+#up {
+    
+    background-color: #4ee2e2;
+    height: 70px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo:hover {
+    border: 2px solid white;
+    border-radius: 10%;
+}
+
+#del {
+    margin-left: 15px;
+}
+
+#in {
+    height: 40px;
+    position: relative;
+    width: 300;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+#in:hover {
+    border: 2px solid rgb(167, 114, 16);
+}
+
+.size_but {
+    height: 40px;
+    width: 40px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(167, 114, 16);
+}
+.size_in {
+    height: 40px;
+    width: 250px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+.size_sel {
+    height: 40px;
+    width: 70px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#lan{
+    color: white;
+    border: transparent;
+}
+
+#par {
+    background-color: #2ccaca;
+    color: white;
+    border: transparent;
+    font-size: 1.2rem;
+}
+
+#cart {
+    margin-right: 15px;
+}
+
+#se {
+    height: 40px;
+    background-color: rgb(132, 134, 238);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec {
+    color: white;
+    margin: 10px;
+}
+.sec:hover {
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+main {
+    background-image: url(ama.2.jpg) ;
+    background-size: cover;
+    height: 300px;  
+}
+
+#box {
+    position: relative;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    top: 250px;
+    background-color: white;
+}
+
+shop {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+    padding-bottom: 20px;
+}
+
+.box {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    width: 290px;
+    padding: 20px 0px 15px;
+    position: relative;
+}
+
+.img-1 {
+    height: 240px;
+    margin: 10px;
+    background-size: cover;
+    width: 270px;
+}
+.h-1 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.f01 {
+    text-decoration: none;
+    color: rgb(113, 169, 29);
+    margin: 10px;
+}
+
+.fou {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: row;
+}
+.i41 {
+    height: 100px;
+    margin-right: 20px;
+    width: 120px;
+}
+
+bar {
+    background-color: antiquewhite;
+        display: flex;
+}
+dra {
+    display: flex;
+    background-color: white;
+    margin: 25px;
+    height: 285px;
+    padding: 0px 20px;
+    width: 1500px;
+    flex-direction: column;
+}
+
+#bar-7{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img-7 {
+    height: 160px;
+}
+.imghan {
+    height: 240px;
+    margin-top: 10px;
+}
+.rat {
+    background-color: rgb(117, 12, 12);
+    color: white;
+    display: inline;
+    border-radius: 2px;
+    margin-left: 10px;
+    margin-top: 2px;
+    margin-right: 10px;
+
+}
+.mon {
+    margin-left: 10px;
+}
+
+.f1 {
+    background-color: rgb(71, 119, 209);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+.f2 {
+    margin: 0px;
+    padding: 0px;
+    background-color: #88abd5;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+}
+.f21 {
+    display: block;
+    margin: 5px;
+}
+.ol {
+    margin: 10px 0px;
+    font-size: 1.3rem;
+}
+
+#f3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 80px;
+    background-color: #7dade9;
+    color: #FFFFFF;
+    border-top: 0.5px solid white;
+}
+#f-31 {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.dol {
+    margin: 10px;
+}
+#f-32 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#ecoForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(225, 221, 221, 0.1);
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select, button {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#result {
+    font-weight: bold;
+    color: green;
+}

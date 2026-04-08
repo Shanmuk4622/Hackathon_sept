@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E- Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="Untitled.png" type="image/x-icon">
+    <style>
+        #bookingForm {
+            background-color: #7fb6cc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-left: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        select, input, button {
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #result {
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+     <h>
+        <div id="up">
+            <div class="logo" style="margin-left: 15px;"> 
+                <a href="image.png" target="_main"><img src="image.png" height="30px" style="border-radius: 5px;"></a>
+            </div>
+            <div class="logo" style="margin-left: 15px;">
+                <p id="del" style="font-size: 0.7rem;">
+                    Go Travel
+                </p>
+                <P style="font-size: 1rem;" >
+                    <i class="fa-solid fa-location-dot"></i>
+                    INDIA
+                </P>    
+            </div>
+            <div id="in">
+                <select class="size_sel" name="Places" style="width: 300px; border-radius: 50%; align-items: center; text-align: center;">
+                    <option>Places</option>
+                    <option>GOA</option>
+                    <option>Kerala</option>
+                    <option>Delhi</option>
+                    <option>Taj Mahal</option>
+                    <option>Kedarnath</option>
+                </select>
+                <input class="size_in" type="text" placeholder="Search Places" style="width: 100px; border-radius: 10%;">
+                <button class="size_but" style="background-color: rgb(112, 143, 230); border-radius: 50%;"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="logo" style="margin-left: 15px;">
+                <p id="del" style="font-size: 0.7rem;">
+                    Language
+                </p>
+                <P style="font-size: 1rem;" >
+                    <div style="margin-left: 15px;" class="logo">
+                        <i class="fa-solid fa-globe"></i>
+                        <select name="Lan" id="lan" style="background-color: #60e6e6;">
+                            <option>EN</option>
+                            <option>HIN</option>
+                            <option>TEL</option>
+                            <option>TN</option>
+                            <option>KAN</option>
+                            <option>SP</option>
+                        </select>
+                    </div>
+                </P>    
+            </div>
+            
+            <div class="logo" style="margin-left: 15px;">
+                <p>Hello, sign in</p>
+                <p><select name="Name & List" id="par">
+                    <option>To Explore</option>
+                </select></p>
+            </div>
+            <div id="cart" class="logo" style="font-size: 30px;">
+                <i class="fa-solid fa-user"></i>Track me
+            </div>
+        </div>
+     </h>
+     <hb>
+        <div id="se">
+            <div style="display: flex;">
+                <div class="sec"><i class="fa-sharp fa-solid fa-bars"></i>All places</div>
+                <div class="sec">Resturent</div>
+                <div class="sec">Temples</div>
+                <div class="sec">National parks</div>
+                <div class="sec">Bus Stops</div>
+                <div class="sec">Railway Stations</div>
+            </div>
+            <div>
+                <div class="sec"><i class="fa-solid fa-users"></i>Track Others</div>
+            </div>
+        </div>
+     </hb>
+
+    <main style="display: flex; flex-direction: row; height: 800px; background-image: url(backGround.jpg); justify-content: space-between; align-items: center;">
+        <div style="display: flex; justify-content: center;">
+            <div id="bookingForm" style="margin-left: 300px;">
+                <h1>Travel Booking</h1>
+        
+                <label for="destination">Select Destination:</label>
+                <select id="destination">
+                    <option value="paris">Paris</option>
+                    <option value="newYork">New York</option>
+                    <option value="tokyo">Tokyo</option>
+                    <!-- Add more destination options as needed -->
+                </select>
+        
+                <label for="modeOfTransport">Select Mode of Transport:</label>
+                <select id="modeOfTransport">
+                    <option value="publicTransport">Public Transport</option>
+                    <option value="carpool">Private Transport</option>
+                    <!-- Add more travel options as needed -->
+                </select>
+        
+                <label for="numberOfPeople">Number of People:</label>
+                <input type="number" id="numberOfPeople" placeholder="Enter number of people">
+        
+                <button onclick="bookTravel()">Book Travel</button>
+        
+                <div id="result"></div>
+            </div>
+        </div>
+        <div style="margin-right: 30px; border: 2px solid black; border-radius: 20px; display: flex; justify-content: center; align-items: center; background-color: rgb(210, 221, 146); height: 400px; width: 300px;">
+            <a href="http://127.0.0.1:5500/page_2.html" id="an" style="z-index: 100; ">Click To Procede</a>
+        </div>
+    </main>
+
+     <footer>
+        <f-1 class="f1">
+            Back to Top
+        </f-1>
+        <f-2 class="f2">
+            <div class="f21">
+                <ul class="ol">Get to Know Us</ul>
+                <ul>Careers</ul>
+                <ul>Blog</ul>
+                <ul>About E-Travel</ul>
+                <ul>Investor Relations</ul>
+                <ul>E-Travel Devices</ul>
+                <ul>E-Travel Science</ul>
+            </div>
+            <div class="f21">
+                <ul class="ol">Make Money with Us</ul>
+                <ul>Sell products on E-Travel</ul>
+                <ul>Sell on E-Travel Business</ul>
+                <ul>Sell apps on E-Travel</ul>
+                <ul>Become an Affiliate</ul>
+                <ul>Self-Publish with Us</ul>
+                <ul>Host an E-Travel Hub</ul>
+                <ul>See More Make Money with Us</ul>
+            </div>
+            <div class="f21">
+                <ul class="ol">E-Travel Payment Products</ul>
+                <ul>E-Travel Business Card</ul>
+                <ul>Shop with Points</ul>
+                <ul>Reload Your Balance</ul>
+                <ul>E-Travel Currency Converter</ul>
+            </div>
+        </f-2>
+        <f-3 id="f3">
+            <f-31>
+                <do class="dol">Conditions of Use</do>
+                <do class="dol">Privacy Notice</do>
+                <do class="dol">Your Ads Privacy Choices</do>
+            </f-31>
+            <f-32>  
+                <i class="fa-regular fa-copyright"></i>
+                <dal>1996-2023, E-Travel.com, Inc. or its affiliates</dal>
+            </f-32>
+        </f-3>
+     </footer>
+
+     <script>
+        function bookTravel() {
+            const destination = document.getElementById('destination').value;
+            const modeOfTransport = document.getElementById('modeOfTransport').value;
+            const numberOfPeople = parseInt(document.getElementById('numberOfPeople').value);
+
+            let bookingMessage;
+
+            if (destination && modeOfTransport && !isNaN(numberOfPeople) && numberOfPeople > 0) {
+                bookingMessage = `Booking confirmed for ${numberOfPeople} people to ${destination} \n using ${modeOfTransport}. \nHave a great trip!`;
+            } else {
+                bookingMessage = 'Please fill in all the fields with valid information.';
+            }
+
+            document.getElementById('result').innerText = bookingMessage;
+        }
+        const modeOfTransport = document.getElementById('modeOfTransport').value;
+            let imgOf = document.querySelector("#an");
+
+            let ecoFriendlyOption;
+
+        switch (modeOfTransport) {
+                case 'publicTransport':
+                    imgOf.href = "http://127.0.0.1:5500/page_2.html";
+                break;
+        }
+    </script>
+</body>         
+</html> 

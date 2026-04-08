@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E- Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="Untitled.png" type="image/x-icon">
+</head>
+<body>
+     <h>
+        <div id="up">
+            <div class="logo" style="margin-left: 15px;"> 
+                <a href="image.png" target="_main"><img src="image.png" height="30px" style="border-radius: 5px;"></a>
+            </div>
+            <div class="logo" style="margin-left: 15px;">
+                <p id="del" style="font-size: 0.7rem;">
+                    Go Travel
+                </p>
+                <P style="font-size: 1rem;" >
+                    <i class="fa-solid fa-location-dot"></i>
+                    INDIA
+                </P>    
+            </div>
+            <div id="in">
+                <select class="size_sel" name="Places" style="width: 300px; border-radius: 50%; align-items: center; text-align: center;">
+                    <option>Places</option>
+                    <option>GOA</option>
+                    <option>Kerala</option>
+                    <option>Delhi</option>
+                    <option>Taj Mahal</option>
+                    <option>Kedarnath</option>
+                </select>
+                <input class="size_in" type="text" placeholder="Search Places" style="width: 100px; border-radius: 10%;">
+                <button class="size_but" style="background-color: rgb(112, 143, 230); border-radius: 50%;"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="logo" style="margin-left: 15px;">
+                <p id="del" style="font-size: 0.7rem;">
+                    Language
+                </p>
+                <P style="font-size: 1rem;" >
+                    <div style="margin-left: 15px;" class="logo">
+                        <i class="fa-solid fa-globe"></i>
+                        <select name="Lan" id="lan" style="background-color: #36c3c3;">
+                            <option>EN</option>
+                            <option>HIN</option>
+                            <option>TEL</option>
+                            <option>TN</option>
+                            <option>KAN</option>
+                            <option>SP</option>
+                        </select>
+                    </div>
+                </P>    
+            </div>
+            
+            <div class="logo" style="margin-left: 15px;">
+                <p>Hello, sign in</p>
+                <p><select name="Name & List" id="par">
+                    <option>To Explore</option>
+                </select></p>
+            </div>
+            <div id="cart" class="logo" style="font-size: 30px;">
+                <i class="fa-solid fa-user"></i>Track me
+            </div>
+        </div>
+     </h>
+     <hb>
+        <div id="se">
+            <div style="display: flex;">
+                <div class="sec"><i class="fa-sharp fa-solid fa-bars"></i>All places</div>
+                <div class="sec">Resturent</div>
+                <div class="sec">Temples</div>
+                <div class="sec">National parks</div>
+                <div class="sec">Bus Stops</div>
+                <div class="sec">Railway Stations</div>
+            </div>
+            <div>
+                <div class="sec"><i class="fa-solid fa-users"></i>Track Others</div>
+            </div>
+        </div>
+     </hb>
+
+    <main style="display: flex; flex-direction: row; height: 800px; background-image: url(backGround.jpg); justify-content: space-between; align-items: center;">
+        <div style="text-align: center; display: flex; justify-content: space-evenly; align-items: center; height: 100vh; width: 1200px;">
+            <div id="ecoForm" style="background-color: rgb(177, 236, 216);">
+                <h1>Eco-Friendly Travel Options</h1>
+                <label for="modeOfTransport">Select Mode of Transport:</label>
+                <select id="modeOfTransport" style="border-radius: 10px;">
+                    <option value="bike">Bike</option>
+                    <option value="publicTransport">Public Transport</option>
+                    <option value="carpool">Carpool</option>
+                    <option value="Scooter">Scooter</option>
+                </select>
+        
+                <label for="distance" style="border-radius: 10px;">Enter Distance (in km):</label>
+                <input type="number" id="distance" placeholder="Enter distance">
+        
+                <button onclick="suggestEcoFriendlyOption()" style="border-radius: 10px; background-color: rgb(119, 179, 179);">Get Eco-Friendly Option</button>
+        
+                
+            </div>
+            <div style="border: 2px solid black; border-radius: 20px; display: flex; justify-content: center; align-items: center; background-color: rgb(194, 210, 180); height: 400px; width: 450px; flex-direction: column;">
+                <img src="restrant.jpg" class="imgOf" style="height: 200px;">
+                <br>
+                <div id="result" > Your Options</div>
+            </div>
+        </div>
+        <div>
+            <div style="margin-right: 30px; border: 2px solid black; border-radius: 20px; display: flex; justify-content: center; align-items: center; background-color: rgb(210, 221, 146); height: 200px; width: 200px;"><a href="http://127.0.0.1:5500/page_3.html" id="an" style="z-index: 100; ">Click To Procede</a></div>
+        </div>
+    </main>
+
+     <footer>
+        <f-1 class="f1">
+            Back to Top
+        </f-1>
+        <f-2 class="f2">
+            <div class="f21">
+                <ul class="ol">Get to Know Us</ul>
+                <ul>Careers</ul>
+                <ul>Blog</ul>
+                <ul>About E-Travel</ul>
+                <ul>Investor Relations</ul>
+                <ul>E-Travel Devices</ul>
+                <ul>E-Travel Science</ul>
+            </div>
+            <div class="f21">
+                <ul class="ol">Make Money with Us</ul>
+                <ul>Sell products on E-Travel</ul>
+                <ul>Sell on E-Travel Business</ul>
+                <ul>Sell apps on E-Travel</ul>
+                <ul>Become an Affiliate</ul>
+                <ul>Self-Publish with Us</ul>
+                <ul>Host an E-Travel Hub</ul>
+                <ul>See More Make Money with Us</ul>
+            </div>
+            <div class="f21">
+                <ul class="ol">E-Travel Payment Products</ul>
+                <ul>E-Travel Business Card</ul>
+                <ul>Shop with Points</ul>
+                <ul>Reload Your Balance</ul>
+                <ul>E-Travel Currency Converter</ul>
+            </div>
+        </f-2>
+        <f-3 id="f3">
+            <f-31>
+                <do class="dol">Conditions of Use</do>
+                <do class="dol">Privacy Notice</do>
+                <do class="dol">Your Ads Privacy Choices</do>
+            </f-31>
+            <f-32>  
+                <i class="fa-regular fa-copyright"></i>
+                <dal>1996-2023, E-Travel.com, Inc. or its affiliates</dal>
+            </f-32>
+        </f-3>
+     </footer>
+
+     <script>
+        function suggestEcoFriendlyOption() {
+            const modeOfTransport = document.getElementById('modeOfTransport').value;
+            const distance = parseFloat(document.getElementById('distance').value);
+            let imgOf = document.querySelector(".imgOf");
+
+            let ecoFriendlyOption;
+
+            switch (modeOfTransport) {
+                case 'bike':
+                    ecoFriendlyOption = distance <= 5 ? 'Biking is a great eco-friendly option!' : 'Consider other options for longer distances.';
+                    imgOf.src = "bike.jpg";
+                    break;
+                case 'bike':
+                    ecoFriendlyOption = distance < 5 ? 'Biking is a great eco-friendly option!' : 'But for longer distance consider another Option';
+                    imgOf.src = "bike.jpg";
+                    break;
+                case 'publicTransport':
+                    ecoFriendlyOption = 'Public transport is a sustainable choice for reducing carbon footprint.';
+                    imgOf.src = "bus.jpg";
+                    break;
+                case 'carpool':
+                    ecoFriendlyOption = 'Carpooling helps in reducing the number of vehicles on the road, making it an eco-friendly option.';
+                    imgOf.src = "car.jpg";
+                    break;
+                case 'Scooter':
+                    ecoFriendlyOption = 'Carpooling helps in reducing the number of vehicles on the road, making it an eco-friendly option.';
+                    imgOf.src = "scooty.jpg";
+                    break;
+                default:
+                    ecoFriendlyOption = 'Invalid selection';
+            }
+
+            document.getElementById('result').innerText = ecoFriendlyOption;
+        }
+    </script>
+</body>         
+</html> 
